@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <table class="table">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Ciudad</th>
+            <th>Email</th> 
+            <th><a href="personas_add">Agregar Personas</a></th>           
+        </tr>
+
+        {% for user in listado %} 
+        
+                
+            <tr>
+                <td> {{user.name.first}} </td>
+                <td> {{user.name.last}} </td>
+                <td> {{user.location.city}} </td>
+                <td> {{user.email}} </td>
+                
+            </tr>         
+
+            
+        {% endfor %}
+    </table>  
+
+{% endblock %}

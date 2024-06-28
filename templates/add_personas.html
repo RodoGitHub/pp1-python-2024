@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<form action="" method="post">
+    <label for="">Nombre</label>
+    <input type="text" name="nombre" required>
+    <label for="">Apellido</label>
+    <input type="text" name="apellido" required>
+    <label for="">Email</label>
+    <input type="email" name="email" required>
+    <label for="">Ciudad</label>
+    <input type="text" name="ciudad" required>
+
+    <button type="submit">Enviar</button>
+</form>
+
+{% endblock %}

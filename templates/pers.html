@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    {{nombres}}
+
+    {% for nombre in nombres %}
+        <li> {{nombre}} </li>
+    {% endfor %}
+
+<hr>
+
+    {% for nombre in diccionario_personas %}
+        <li> Nombre: {{nombre.nombre}} <br> Edad: {{nombre.edad}} Pais: {{nombre.pais}} </li>
+    {% endfor %}
+
+{% endblock %}
